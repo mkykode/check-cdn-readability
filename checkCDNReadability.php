@@ -32,7 +32,7 @@ class checkCDNReadability {
 			CURLOPT_SSL_VERIFYPEER => false,
 			CURLOPT_TIMEOUT        => 5,
 			// It's very important to let other webmasters know who's probing their servers.
-			CURLOPT_USERAGENT      => 'Mozilla/5.0 (compatible; StackOverflow/0.0.1; +https://codereview.stackexchange.com/)',
+			CURLOPT_USERAGENT      => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
 		] );
 		curl_exec( $ch );
 		$code = curl_getinfo( $ch, CURLINFO_HTTP_CODE );
